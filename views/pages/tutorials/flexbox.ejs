@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page Template With Flexbox</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header>
+		<h2><a href="/">Feature Guide</a></h2>
+		<nav>
+			<li><a href="/">Home</a></li>
+			<li><a href="/#titles">Titles</a></li>
+			<li><a href="/#what">About</a></li>
+			<li><a href="/htmlhistory">HTML History</a></li>
+			<li><a href="/csshistory">CSS History</a></li>
+		</nav>
+	</header>
+
+
+
+
+	<section class="our-work">
+		<div class="width-wrapper" style="max-width: 1500px">
+			<div class="left-bar">
+				<ul>
+					<li><a  href="/emoji">Emoji</a></li>
+					<li><a href="/becontainer">Beautiful Container</a></li>
+					<li><a href="/fontawesome">Font Awesome</a></li>
+					<li><a class="active" href="/flexbox">Flex Box</a></li>
+					<li><a href="/cursor">Cursor</a></li>
+					<li><a href="/codetag">Code Tag</a></li>
+					<li><a href="/fancylist">Fancy List</a></li>
+				</ul>
+			</div>
+			<div class="inner-block">
+				<h3 class="title">🎁 Flexbox</h3>
+				<p>The reason why flexbox is here - because it is widely used almost everywhere. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a> - is a layout which helps you to create smart container of many items the way you would like to. Let`s start!</p>
+				
+				<div class="width-wrapper" style="padding: 20px;">
+					<img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg" width="300" style="margin-left: 5%; margin-top: 15px;">
+					<img src="https://css-tricks.com/wp-content/uploads/2018/10/02-items.svg" width="300" style="margin-left: 5%; margin-top: 15px;">
+				</div>
+
+				<p style="margin-top: 20px;">When you already created container - define its <b style="color: rgb(254, 255, 93);">display</b> : it enables a flex context for all its direct children.</p>
+				
+				<pre>
+					<code class="bash">
+					    <code class="css">
+                                                                        <span style="color: chartreuse;">css</span>
+  <span class="bash-keyword">.container</span> {
+	<span class="bash-keyword">display</span>: flex; /* or inline-flex */
+	<span class="bash-keyword">flex-direction</span>: row | row-reverse | column | column-reverse;
+	<span class="bash-keyword">flex-wrap</span>: nowrap | wrap | wrap-reverse;
+	<span class="bash-keyword">flex-grow</span>: 4; /* default 0 */
+	  }
+                        </code>
+                    </code>
+				</pre>
+				<p style="margin-top: 25px;"><b class="important">flex-direction</b><br>Defining the direction flex items are placed in the flex container.</p>
+				<ul>
+					<li><span class="bash-keyword">row (default)</span>: left to right in ltr; right to left in rtl</li>
+					<li><span class="bash-keyword">row-reverse</span>: right to left in ltr; left to right in rtl</li>
+					<li><span class="bash-keyword">column</span>: same as row but top to bottom</li>
+					<li><span class="bash-keyword">column-reverse</span>: same as row-reverse but bottom to top</li>
+				</ul>
+				<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg" width="350" style="margin-left: 25%;">
+
+				<p style="margin-top: 25px;"><b class="important">flex-wrap</b><br>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</p>
+				<ul>
+					<li><span class="bash-keyword">nowrap (default)</span>: all flex items will be on one line</li>
+					<li><span class="bash-keyword">wrap</span>:  flex items will wrap onto multiple lines, from top to bottom.</li>
+					<li><span class="bash-keyword">wrap-reverse</span>:  flex items will wrap onto multiple lines from bottom to top</li>
+				</ul>
+				<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg" width="350" style="margin-left: 25%; margin-top: 15px;">
+
+				<p style="margin-top: 25px;"><b class="important">flex-grow</b><br>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+				<p style="margin-top: 20px;">If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).</p>
+
+				<img src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg" width="350" style="margin-left: 25%; margin-top: 15px;">
+
+				<p style="margin-top: 20px;">For more information on this topic visit a <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></p>
+
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="https://www.facebook.com/anna.botsula/"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="https://github.com/botsula"><i class="fa fa-github-square"></i></a></li>
+		</ul>
+		<p>Made by Anna Botsula for html+css course in university, 2020</p>
+	</footer>
+
+</body>
+
+</html>

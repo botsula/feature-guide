@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page Template With Flexbox</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	<header>
+		<h2><a href="/">Feature Guide</a></h2>
+		<nav>
+			<li><a href="/">Home</a></li>
+			<li><a href="/#titles">Titles</a></li>
+			<li><a href="/#what">About</a></li>
+            <li><a href="/htmlhistory">HTML History</a></li>
+			<li><a href="/csshistory">CSS History</a></li>
+		</nav>
+	</header>
+
+
+	<section class="our-work">
+		<div class="width-wrapper" style="max-width: 1500px">
+			<div class="left-bar">
+				<ul>
+					<li><a  href="/emoji">Emoji</a></li>
+					<li><a class="active" href="/becontainer">Beautiful Container</a></li>
+					<li><a href="/fontawesome">Font Awesome</a></li>
+					<li><a href="/flexbox">Flex Box</a></li>
+                    <li><a href="/cursor">Cursor</a></li>
+                    <li><a href="/codetag">Code Tag</a></li>
+                    <li><a href="/fancylist">Fancy List</a></li>
+				</ul>
+			</div>
+			<div class="inner-block">
+				<h3 class="title">📋 Beautiful Container</h3>
+				<p>In this chapterrrrr of guide you will study how to create the simpliest <a href="https://codepen.io/deam0n/pen/RRzmjq">container</a> ever but from which you can push of to create something new.
+                </p>
+                <p style="margin-top: 20px">So here you can see the <b>css</b> part of code to write 2 styles for it:
+                </p>
+                <!-- C0DING PART -->
+
+                <pre>
+                    <code class="bash">
+					    <code class="css">
+                                                                        <span style="color: chartreuse;">css</span>
+    <span class="bash-keyword">.shadow</span> {
+    -webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+    }
+
+    <span class="bash-keyword">.container</span> {
+        margin: 0 auto;
+        margin-top: 50px;;
+
+        height: 80vh;
+        background: #F2F2F2;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 2px #fff inset,
+                    -1px -1px 2px #fff inset;
+        border-radius: 3px/6px;         
+    }
+                        </code>
+                    </code>
+                </pre>
+                <p>Easy, isn`t it? Okay, then you are ready to write the next 4 lines of <b>html</b> code: </p>
+                <pre>
+                    <code class="bash" style="line-height: 0px; padding: 5px;">
+					    <code class="css">
+                                                                        <span style="color: chartreuse;">html</span>
+    &lt;div class=<span class="bash-keyword">"shadow"</span>&gt;
+        &lt;div class=<span class="bash-keyword">"container"</span>&gt;
+        
+        &lt;/div&gt;
+    &lt;/div&gt;
+                        </code>
+                    </code>
+                </pre>
+
+                <!-- END OF CODING PART -->
+
+                <p>So now the hardest part - LOOK WHAT YOU HAVE DONE :  </p>
+
+                <div class="beautiful-container">
+                    <div class="shadow">
+                        <div class="container">
+                        <p style="padding-top: 34px; padding-left: 45px;color: darkslategray; font-size: 15px;">Mmmm - such a beautiful container!</p>
+                        
+                        
+                        </div>
+                      </div>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="https://www.facebook.com/anna.botsula/"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="https://github.com/botsula"><i class="fa fa-github-square"></i></a></li>
+		</ul>
+		<p>Made by Anna Botsula for html+css course in university, 2020</p>
+	</footer>
+
+</body>
+
+</html>
